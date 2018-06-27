@@ -19,7 +19,7 @@ namespace GetIoTHubDataFunction
         {
             log.Info("C# HTTP trigger function processed a request.");
 
-            string connectionUri = "HostName=reactorhackrj0d722.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=cdzkozHgpDB08H5U2xQZN/0taN5LTDCTTVjaTDTBCAM=";//"HostName=iothub-c7wdu.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=Ml471les8qtgRdm4MCTKEeBBonEN5u0n0SOIpEiaApo=";
+            string connectionUri = "HostName=iothub-4c2eo.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=ErZTfptovM9WxDJwgcOb8OTQ5zIl4tq5adOjNSRixto=";
             RegistryManager registryManager;
             registryManager = RegistryManager.CreateFromConnectionString(connectionUri);
             var query = registryManager.CreateQuery("SELECT * FROM devices", 100);
